@@ -5,8 +5,8 @@
        enabled: true
      steps:
      - run: |
-           if [ "$VAR" = "hello" ]; then
-               echo hello
+           if [ "$SSH_USER" = "ubuntu" ]; then
+               echo "ubuntu"
            fi
  workflows:
    version: 2
