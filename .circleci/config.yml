@@ -6,7 +6,7 @@
      steps:
        - run: |
              if [ "$SSH_USER" = "ubuntu" ]; then
-                 echo ubuntu
+                 echo hello
              fi
  workflows:
    version: 2
@@ -15,4 +15,4 @@
        - deploy:
            filters:
              branches:
-               only: main # only deploy on the main branch
+               only: main # only deploy on the main branch1
