@@ -4,10 +4,10 @@
      machine:
        enabled: true
      steps:
-     - run: |
-           if [ "$SSH_USER" = "ubuntu" ]; then
-               echo "ubuntu"
-           fi
+       - run: |
+             if [ "$SSH_USER" = "ubuntu" ]; then
+                 echo ubuntu
+             fi
  workflows:
    version: 2
    build-and-deploy:
