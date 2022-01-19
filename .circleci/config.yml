@@ -3,7 +3,7 @@
    deploy:
      steps:
      - run: |
-           if [ "$HOST_NAME" = "ubuntu" ]; then
+           if [ "$SSH_USER" = "ubuntu" ]; then
                echo hello
            fi
  workflows:
